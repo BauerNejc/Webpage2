@@ -1,0 +1,695 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* GENERAL RULES */
+
+body {
+    font-family: "Roboto", "Helvetica";
+}
+
+#home {
+    background: linear-gradient(rgba(218, 51, 45, 0.6),rgba(218, 51, 45, 0.6)), url("../img/hero-bg-web.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 52px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+p {
+    font-size: 36px;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.red-text {
+    color: #f55150;
+}
+
+.block {
+    display: block;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.inline {
+    display: inline-block;
+}
+
+/* END OF GENERAL RULES */
+
+
+/* NAVBAR */
+nav li {
+    display: inline-block;
+    margin: 20px 15px;
+}
+
+nav li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s border-bottom;
+}
+
+nav li a:hover {
+    border-bottom: 4px solid #fff;
+    transition: 0.3s;
+}
+
+/* HOME SECTION */
+
+#home h2 {
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.cta-paragraph {
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 55px;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 40px;
+    position: relative;
+}
+
+.cta-text {
+    width: 65%;
+    padding-right: 150px;
+    float: left;
+}
+
+.cta-button {
+    padding: 23px 35px;
+    background: #282828;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.cta-button:hover {
+    background: #383737;
+    transition: 0.2s;
+}
+
+.btn-icon {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.imgs {
+    float: right;
+    position: absolute;
+    right: -135px;
+    top: 100px;
+}
+
+.iphone-img {
+    width: 85%;
+    position: relative;
+}
+
+.iphone-btn {
+    position: absolute;
+    right: 200px;
+}
+
+.iphone-on {
+    position: absolute;
+    right: 175px;
+    top: 110px;
+    width: 54%;
+}
+
+/* APP FEATURES */
+
+#app-features {
+    text-align: center;
+}
+
+.h2_app-features {
+    color: #8a8a8a;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.p_app-heading {
+    font-size: 22px;
+    color: #6f6f6f;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 0px 130px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.col-4-app {
+    width: 33%;
+    float: left;
+    padding: 45px;
+}
+
+.col-4-app h3 {
+    margin: 30px 0px;
+    font-weight: 700;
+}
+
+.p_app-features {
+    font-size: 18px;
+    color: #797979;
+    line-height: 24px;
+}
+
+/* CLOWN SECTION */
+
+#clown-section {
+    background: url("../img/section-3-clown-web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.download-info {
+    width: 50%;
+    padding: 200px 0px;
+}
+
+.download-info h2 {
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.clown-p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Roboto";
+    margin-bottom: 50px;
+    color: #616161;
+    width: 75%;
+}
+
+.download-btn {
+    font-size: 16px;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    text-transform: uppercase;
+    background: #d9332d;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #c3332c;
+    transition: 0.3s;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background: #2e2e38;
+}
+
+footer .container {
+    padding: 120px 20px;
+}
+
+footer h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+footer p {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.ul-posts li {
+    line-height: 20px;
+    padding-left: 70px;
+}
+
+.ul-posts li,
+.ul-tweets li {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.col-4-footer {
+    width: 33%;
+    float: left;
+    padding: 30px;
+}
+
+.p-about {
+    font-size: 15px;
+    font-weight: 300;
+    color: #efefef;
+    line-height: 20px;
+    font-style: italic;
+}
+
+.reddish-bg {
+    background: url("../img/section-4-kvadrat.png");
+    background-repeat: no-repeat;
+
+}
+
+.smallText {
+    font-size: 11px;
+    margin-top: 5px;
+    color: #efefef;
+}
+
+/* COPYRIGHT SECTION */
+
+#copyright {
+    background: #d7dedc;
+    text-align: center;
+}
+
+#copyright .container {
+    padding: 40px;
+}
+
+.cr,
+.me {
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 700;
+    padding: 0px 20px;
+    border-right: 3px solid black;
+}
+
+.me a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social {
+    margin: 0px 20px;
+}
+
+.social a {
+    color: #000;
+    transition: 0.3s;
+}
+
+.social i {
+    padding: 10px;
+}
+
+.social a:nth-child(1):hover {
+    color: #3b5998;
+    transition: 0.2s;
+}
+
+.social a:nth-child(2):hover {
+    color: #55acee;
+    transition: 0.2s;
+}
+
+.social a:nth-child(3):hover {
+    color: #007bb5;
+    transition: 0.2s;
+}
+
+/* ANIMATIONS */
+
+.js-wp-2 {
+    opacity: 0;
+}
+
+.js-wp-2.animated {
+    opacity: 1;
+}
+
+.js-wp-3 {
+    opacity: 0;
+    animation-delay: 1.6s;
+}
+
+.js-wp-3.animated {
+    opacity: 1;
+}
+
+
+/**************************/
+/*  RESPONSIVE DESIGN     */
+/**************************/
+
+@media only screen and (max-width: 1200px){
+
+    .cta-text {
+        padding-right: 100px;
+        width: 70%;
+    }
+
+    .download-info {
+        padding: 100px 0px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+
+    .imgs {
+        right: -197px;
+    }
+
+    .iphone-img {
+        width: 70%;
+    }
+
+    .iphone-btn {
+        right: 265px;
+        width: 9%;
+    }
+
+    .iphone-on {
+        right: 241px;
+        top: 93px;
+        width: 44%;
+    }
+
+    .cta-text {
+        width: 65%;
+    }
+
+    .cta-button {
+        font-size: 13px;
+    }
+
+    .col-4-app {
+        padding: 25px;
+    }
+
+    .download-info {
+        padding: 40px 0px;
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo img {
+        width: 70%;
+    }
+
+    .nav {
+        overflow: hidden;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: block;
+        z-index: 5000;
+    }
+
+    .burger-nav {
+        float: right;
+        background: url("../img/hamburger.png");
+        display: block;
+        height: 31px;
+        width: 40px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .container nav ul {
+        height: 0;
+        overflow: hidden;
+        background-color: #282828;
+        border-radius: 5px;
+    }
+
+    .container nav ul.open {
+        height: auto;
+        clear: both;
+    }
+
+    .container nav ul li {
+        float: none;
+        text-align: right;
+        width: auto;
+        margin: 0;
+        display: block;
+    }
+
+    .container nav ul li a {
+        color: white;
+        padding: 10px;
+        display: block;
+        margin: 0;
+    }
+
+    .container nav ul li a:hover {
+        border: none;
+    }
+
+    nav li a {
+        border: none;
+    }
+
+    nav li a:hover {
+        border: none;
+    }
+
+    .iphone-img {
+        display: none;
+    }
+
+    .cta-text {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #home h2 {
+        margin-top: 30px;
+    }
+
+    .p_app-heading {
+        padding: 0px 50px;
+    }
+
+    .col-4-app {
+        width: 100%;
+        clear: both;
+    }
+
+    .download-info {
+        padding: 0px;
+        width: 75%;
+    }
+
+    .download-info h2 {
+        font-size: 35px;
+    }
+
+    .clown-p {
+        font-size: 20px;
+    }
+
+    footer h4 {
+        font-size: 17px;
+    }
+
+    .ul-posts li,
+    .ul-tweets li {
+        font-size: 12px;
+    }
+
+    .col-4-footer {
+        padding: 4px;
+        clear: both;
+        width: 100%;
+    }
+
+    .logo-footer {
+        width: 20%;
+    }
+
+    .block {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 9px;
+    }
+
+    .p_app-heading {
+        padding: 0px 10px;
+        font-size: 20px;
+    }
+
+    .clown-p {
+        width: 100%;
+    }
+
+    .logo-footer {
+        width: 40%;
+    }
+
+    .cr, .me {
+        padding: 0px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .cr, .me {
+        padding: 0px;
+        border: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
